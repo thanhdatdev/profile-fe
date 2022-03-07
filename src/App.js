@@ -1,15 +1,29 @@
 import './App.css';
 import React from 'react';
-import { Switch, Route } from 'react-router-dom'
-import { router } from './routers'
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import routes from './pages/routes';
+import GlobalStyle from './styles/globalStyles';
 
 function App() {
   return (
-    <Switch>
-      {router.map(({ component: Component, path, ...rest }) => {
-        return <Route component={Component} key={path} {...rest} />;
-      })}
-    </Switch>
+    <BrowserRouter>
+      <GlobalStyle />
+      <Switch>
+        {routes.map(({ component: Component, path, ...rest }) => {
+          return (
+            <Route
+              render={(props) => (
+                <React.Suspense fallback={'loading...'}>
+                  <Component {...props} />
+                </React.Suspense>
+              )}
+              key={path}
+              {...rest}
+            />
+          );
+        })}
+      </Switch>
+    </BrowserRouter>
   );
 }
 
