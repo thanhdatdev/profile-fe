@@ -5,7 +5,6 @@
     "homepage": "https://thanhdatdev.github.io/profile-fe/",
     "dependencies": {
         "@material-ui/core": "^4.12.3",
-        "gh-pages": "^3.2.3",
         "react": "^17.0.2",
         "react-dom": "^17.0.2",
         "react-router-dom": "^5.2.0",
