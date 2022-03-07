@@ -18,7 +18,6 @@ const Wrapper = styled.div`
   align-items: center;
 `;
 
-
 export default function Home() {
   return (
     <Wrapper>

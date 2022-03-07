@@ -6,7 +6,7 @@ const Wrapper = styled.div`
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: center;
-  margin-top: 1.875rem;
+  margin-top: 0.625rem;
 `;
 
 const WrapperContentBlock = styled.div`
