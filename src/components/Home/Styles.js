@@ -17,7 +17,7 @@ const WrapperContentBlock = styled.div`
 const Title = styled.div`
   ${Typography.bold.x60}
   @media ${Sizing.device.tablet} {
-    ${Typography.bold.x80}
+    ${Typography.bold.x70}
   }
 `;
 
@@ -25,14 +25,14 @@ const TextIcon = styled.span`
   ${Typography.regular.x30};
   margin-right: 0.625rem;
   @media ${Sizing.device.tablet} {
-    ${Typography.regular.x70}
+    ${Typography.regular.x60}
   }
 `;
 
 const Text = styled.span`
   ${Typography.regular.x30};
   @media ${Sizing.device.tablet} {
-    ${Typography.regular.x70}
+    ${Typography.regular.x60}
   }
 `;
 
@@ -47,7 +47,7 @@ const ChildrenText = styled.div`
   border-bottom: 0.0625rem dashed #aaa;
   ${Typography.regular.x30};
   @media ${Sizing.device.tablet} {
-    ${Typography.regular.x70}
+    ${Typography.regular.x60}
   }
 `;
 
