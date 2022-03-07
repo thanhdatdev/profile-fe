@@ -1,6 +1,7 @@
 import React  from "react";
 import Intro from "../../components/Home/Intro";
 import styled from "styled-components";
+import About from "../../components/Home/About";
 
 const Wrapper = styled.div`
   display: flex;
@@ -11,10 +12,12 @@ const Wrapper = styled.div`
   align-items: center;
 `;
 
+
 export default function Home() {
   return (
     <Wrapper>
       <Intro />
+      <About />
     </Wrapper>
   );
 }
