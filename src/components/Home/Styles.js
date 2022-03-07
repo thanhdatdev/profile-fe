@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 import { Sizing, Typography } from '../../styles/style'
 
@@ -42,36 +41,30 @@ const WrapperTextIcon = styled.div`
   flex-direction: column;
 `;
 
+const ChildrenText = styled.div`
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 0.0625rem dashed #aaa;
+  ${Typography.regular.x30};
+  @media ${Sizing.device.tablet} {
+    ${Typography.regular.x70}
+  }
+`;
+
+const Li = styled.li `
+  list-style-type: none;
+  display: flex;
+`;
+
+const CallApiText = styled.div`
+  color: #8d8d8d;
+  ${Typography.regular.x10}
+  @media ${Sizing.device.tablet} {
+    ${Typography.regular.x30}
+  }
+`;
 export default function Styles() {
-  return (
-    <>
-      <WrapperContentBlock>
-        <Title>About Me</Title>
-        <WrapperTextIcon>
-          <li style={{ listStyleType: 'none' }}>
-            <TextIcon>🧑</TextIcon>
-            <Text>22 years old</Text>
-          </li>
-          <li style={{ listStyleType: 'none' }}>
-            <TextIcon>🇻🇳</TextIcon>
-            <Text>From Vietnam</Text>
-          </li>
-          <li style={{ listStyleType: 'none' }}>
-            <TextIcon>👨‍💻</TextIcon>
-            <Text>Software Developer</Text>
-          </li>
-          <li style={{ listStyleType: 'none' }}>
-            <TextIcon>🔨</TextIcon>
-            <Text>Full-time at Zenapp</Text>
-          </li>
-          <li style={{ listStyleType: 'none' }}>
-            <TextIcon>😻</TextIcon>
-            <Text>Cats {`>`} Dogs</Text>
-          </li>
-        </WrapperTextIcon>
-      </WrapperContentBlock>
-    </>
-  );
+  return <div></div>
 }
 
 Styles.Wrapper = Wrapper;
@@ -80,3 +73,6 @@ Styles.Title = Title;
 Styles.TextIcon = TextIcon;
 Styles.Text = Text;
 Styles.WrapperTextIcon = WrapperTextIcon;
+Styles.ChildrenText = ChildrenText;
+Styles.Li = Li;
+Styles.CallApiText = CallApiText;

@@ -1,7 +1,8 @@
 import React  from "react";
 import Intro from "../../components/Home/Intro";
 import styled from "styled-components";
-import About from "../../components/Home/Styles";
+import Styles from "../../components/Home/Styles";
+import About from "../../components/Home/About"
 import MyProducts from '../../components/Home/MyProducts';
 import SocialMedia from "../../components/Home/SocialMedia";
 import Writings from "../../components/Home/Writings";
@@ -22,14 +23,14 @@ export default function Home() {
   return (
     <Wrapper>
       <Intro />
-      <About.Wrapper>
+      <Styles.Wrapper>
         <About />
         <MyProducts />
         <SocialMedia />
         <Writings />
         <Code />
         <OtherPlaces />
-      </About.Wrapper>
+      </Styles.Wrapper>
     </Wrapper>
   );
 }
