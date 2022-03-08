@@ -130,9 +130,7 @@ module.exports = function(_env, argv) {
       compress: true,
       historyApiFallback: true,
       open: true,
-      overlay: true,
-      publicPath: '/assets/',
-      contentBase: path.join(__dirname, 'public'),
+      overlay: true
     },
   };
 };
