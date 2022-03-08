@@ -126,6 +126,7 @@ module.exports = function(_env, argv) {
       runtimeChunk: "single"
     },
     devServer: {
+      hot: true,
       compress: true,
       historyApiFallback: true,
       open: true,
