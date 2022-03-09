@@ -14,8 +14,8 @@
         "universal-cookie": "^4.0.4"
     },
     "scripts": {
-        "build": "webpack --mode production",
-        "start": "webpack-dev-server --mode development",
+        "build": "react-scripts build",
+        "start": "react-scripts start",
         "push": "git push origin master",
         "deploy": "yarn build && gh-pages -d dist"
     },
