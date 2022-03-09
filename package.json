@@ -17,7 +17,7 @@
         "build": "react-scripts build",
         "start": "react-scripts start",
         "push": "git push origin master",
-        "deploy": "yarn build && gh-pages -d dist"
+        "deploy": "yarn build && gh-pages -d build"
     },
     "eslintConfig": {
         "extends": [

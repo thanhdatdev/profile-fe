@@ -63,7 +63,7 @@ const CallApiText = styled.div`
     ${Typography.regular.x30}
   }
 `;
-export default function Styles() {
+export default function Styles(props) {
   return <div></div>
 }
 
