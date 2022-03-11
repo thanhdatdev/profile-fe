@@ -8,6 +8,7 @@ import SocialMedia from "../../components/Home/SocialMedia";
 import Writings from "../../components/Home/Writings";
 import Code from '../../components/Home/Code';
 import OtherPlaces from "../../components/Home/OtherPlaces";
+import MusicCard from "../../components/Home/MusicCard";
 
 const Wrapper = styled.div`
   display: flex;
@@ -26,9 +27,9 @@ export default function Home() {
         <About />
         <MyProducts />
         <SocialMedia />
+        <OtherPlaces />
         <Writings />
         <Code />
-        <OtherPlaces />
       </Styles.Wrapper>
     </Wrapper>
   );
